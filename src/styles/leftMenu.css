@@ -1,0 +1,291 @@
+.leftmenu{
+    z-index: 1;
+
+    width: 240px;
+    height: 100%;
+    background: rgba(34, 34, 34, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 25px 30px;
+    overflow-y:scroll;
+}
+.logocontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f1f1f1;
+
+}
+.logocontainer i{
+    font-size: 30px;
+    
+}
+.tracklist{
+    margin-left:-10PX;
+}
+.leftmenu .logocontainer i:nth-of-type(2){
+    font-size: 20px;
+}
+.leftmenu .logocontainer h2{
+    font-size: 20px}
+    .searchbox{
+        width: 120%;
+        height: 45px;
+box-shadow: 0px 0px 20px rgba(0,0,0, 0.4);
+        position: relative;
+        margin-top: 12px;
+        color: #848484;border-radius: 10px;
+        overflow: hidden;
+        margin-left: -27px;
+    }
+    .searchbox input{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: rgba(0,0,0, 0.5);
+        border: none;
+        outline: none;
+        padding: 0 45px;
+        color: #f1f1f1;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .searchbox i{
+        position: absolute;
+        color: #848484;
+    
+        width: 45px;
+        height: 45px;
+        line-height: 50px;
+        text-align: center;
+        left: 0px;
+        right: 0;}
+        .menulist{
+            list-style-type: none;
+        }
+        .menuContainer{
+            margin:15px -23px;
+        }
+        .menuContainer .menulist{
+            width: 100%;
+            padding: 0;
+
+        }
+        .menuContainer ul li{
+            list-style: none;
+            margin: 0px 0 ;
+            padding: 10px 0 ;
+            width: 100%;
+
+        }
+        .menuContainer ul li a{
+            text-decoration: none;
+            color: #848484;
+        }
+        .menuContainer p{
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #848484;
+            font-weight: bold;
+            font-size: 12px;
+
+        }
+        .menuContainer ul li a i{
+            margin-right: 10px;
+            font-size: 18px;
+            width: 20px;
+
+        }
+      li.active::before{
+       content: "";
+       width: 3px;
+       height: 20px;
+       position: absolute;
+       background-color: chartreuse;
+       left: 0px;
+       border-radius: 5px;
+transition: all 0.3s ease;
+
+
+        }
+li:hover a span{
+    color:#f1f1f1;
+    font-size:17px;
+}
+   .playlistcontainer{
+       margin: 15px -20px;
+       cursor: pointer;
+       height: 100px;
+       overflow-y: scroll;
+       
+   }
+   .playlistcontainer .nemecontainer{
+       display: flex;
+       justify-content:space-between ;
+       align-items: center;
+       color: #848484;
+       margin-bottom: 10px;
+   }
+   .playlistcontainer .nemecontainer p{
+       font-size: 12px;
+       font-weight: bold;
+
+       text-transform: uppercase;
+   }
+   .playlistcontainer .nemecontainer i{
+       color: #f1f1f1;
+       cursor: pointer;
+   }
+   .playlistscroll{
+       position: relative;
+       height: 140px;
+       overflow-x: hidden;
+       overflow-y: scroll;
+   }
+   .playlistscroll .playlist{
+       display: flex;
+       color: #848484;
+       margin-bottom: 5px;
+    
+       align-items: center;
+   }
+   .playlistscroll .playlist i{
+       font-size: 18px;
+   }
+   .playlistscroll .playlist .list{
+       margin-right: 15px;
+   }
+   .playlistscroll .playlist .trash{
+       margin-left: auto;
+       cursor: pointer;
+       
+}
+.playlistscroll .playlist p{
+    font-size: 16px;
+    display: inline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    
+}
+.tracklist .top img{
+    width: 50px;
+    height: 50px;
+}
+.tracklist{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.tracklist .top{
+display: flex;
+
+}
+.tracklist .top p{
+    padding-top: 12px;
+    padding-left: 10px;
+    color: #f1f1f1;
+    font-size: 14px;
+}
+.tracklist .top p span{
+ font-size: 12px;
+    display: block;
+    color: #848484;
+}
+.tracklist .buttom{
+    display: flex;
+    justify-content: space-between;
+    color: #848484;
+    width: 110%;
+}
+.tracklist .buttom i:hover{
+    color: #f1f1f1;
+    transition: .03s ease;
+}
+.tracklist .buttom input{
+    position: relative;
+    border: none;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    appearance: none;
+    top: 5px;
+}
+.tracklist .buttom input::before{
+    content: '';
+    background-color: chartreuse;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+}
+.tracklist .buttom input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 5px;
+    border-radius: 10px;
+    background-color:chartreuse ;
+     
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 3;
+    margin-left: -10px;
+
+}
+.tracklist .buttom input::-moz-progress-bar{
+    background-color:chartreuse ;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+
+}
+.tracklist .buttom input::-moz-range-thumb{
+    background-color: chartreuse;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+
+}
+@media screen and (max-width : 550px) {
+    .leftmenu{
+        width: 64px;
+        min-width:64px;
+    }
+    .menuContainer ul li a span{
+        display: none;
+    }
+    .leftmenu .searchbox{
+        display: none;
+    }
+    .leftmenu .playlistcontainer{
+        display: none;
+    }
+    .leftmenu .tracklist{
+        display: none;
+    }
+    .logocontainer h2{
+        display: none;
+    }
+    .menulist {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .icon-menu{
+    text-align: center;
+        
+    }
+    .dots{
+        display: none;
+    }
+    .logocontainer{
+        justify-content: center;
+    }
+ 
+}
+
+
